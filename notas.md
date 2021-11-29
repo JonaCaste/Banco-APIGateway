@@ -32,3 +32,11 @@ Con esto convertimos las carpetas en paquetes
 Realizamos la config dentro de `src/index.js`
 
 Corremos el server con `node src/index.js`
+
+## Orquestación de servicios
+DEsde los resolvers, creamos una funcion que nos maneje dos o mas microservicios
+
+## Context
+
+Paso intermedio entre el Resolver
+Creamos una carpeta llamadoa `utils`

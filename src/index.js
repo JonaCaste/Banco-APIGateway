@@ -1,14 +1,18 @@
 const { ApolloServer } = require("apollo-server");
 
 const typeDefs = require('./typeDefs');
-const resolvers = require('./resolvers')
-const AccountAPI = require('./dataSources/account_api')
+const resolvers = require('./resolvers');
+const AccountAPI = require('./dataSources/account_api');
+const AuthAPI = require('./dataSources/auth_api');
+const authentication = require("./utils/authentication");
 
 const server = new ApolloServer({
+    context: authentication,
     typeDefs,
     resolvers,
     dataSources: () => ({
-        accountAPI: new AccountAPI()
+        accountAPI: new AccountAPI(),
+        authAPI: new AuthAPI(),
     }),
 
     //config para iniciar el server
