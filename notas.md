@@ -1,7 +1,7 @@
 # ApiGateway
 
 ## Package.json
-Creamos `package.json`, la configuracion inicial de nuestro proyecti
+Creamos `package.json`, la configuracion inicial de nuestro proyecto
 
 ## Creamo el proyecto
 Con el comando `npm install`, creamos nuestro proyecto de JS
@@ -40,3 +40,13 @@ DEsde los resolvers, creamos una funcion que nos maneje dos o mas microservicios
 
 Paso intermedio entre el Resolver
 Creamos una carpeta llamadoa `utils`
+
+## Despliegue en Heroku - Docker
+Los comandos estan en `Dockerfile`
+* Instalamos nuestro lenguaje
+* Seleccionamos nuestra carpeta principal
+* Copiamos `package.json` y pegamos en la carpeta del proyecto, con el asterisco copiamos el todo los `package`
+* Instalamos los paquetes
+* Copiar y pegar todo el proyecto -> se copia del directorio del computador para pegarlo en el workdir de docker
+* Exponemos los puertos
+* Correr el servidor
