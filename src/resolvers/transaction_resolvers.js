@@ -13,7 +13,7 @@ const transactionResolver = {
 
     Mutation:{
         createTransaction: async ( _, {transaction}, {dataSources}) => {
-            return await dataSources.accountApi.createTransaction(transaction);
+            return await dataSources.accountAPI.createTransaction(transaction);
         }
     }
 }

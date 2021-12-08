@@ -7,7 +7,7 @@ Creamos `package.json`, la configuracion inicial de nuestro proyecto
 Con el comando `npm install`, creamos nuestro proyecto de JS
 
 ## Index
-Creamos la carpeta y dentro creamos nuestro index en `src/index.js`
+Creamos la carpeta `src` y dentro creamos nuestro index en `src/index.js`
 
 ## dataDef
 Definimos los tipos de los objetos con los que vamos a trabajar

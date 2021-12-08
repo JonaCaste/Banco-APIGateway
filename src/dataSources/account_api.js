@@ -26,7 +26,7 @@ class AccountApi extends RESTDataSource{
     }
 
     async transactionByUsername(username){
-        return await this.get(`/transactions/ ${username}`);
+        return await this.get(`/transactions/${username}`);
     }
 
 }
