@@ -34,7 +34,7 @@ Realizamos la config dentro de `src/index.js`
 Corremos el server con `node src/index.js`
 
 ## Orquestación de servicios
-DEsde los resolvers, creamos una funcion que nos maneje dos o mas microservicios
+Desde los resolvers, creamos una funcion que nos maneje dos o mas microservicios
 
 ## Context
 

@@ -18,6 +18,7 @@ const authentication = async ({ req }) => {
                 redirect: "follow"
             }
 
+            //enviamos la peticion al link que recibe el ttoken y valida si la persona esta autenticada
             let response = await fetch(`${serverConfig.auth_api_url}soporte/user`, requestOptions);
             if(response.status != 200){
                 console.log(response);
